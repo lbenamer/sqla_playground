@@ -1,5 +1,4 @@
-# SQL Alchemy Postgres Playground
-
+# SQL Zeby
 ### Requirements  
 - python 2.7
 - virtualenv
