@@ -8,6 +8,9 @@ class SqlApp():
         self.Base = declarative_base()
 
     def connect(self, db_uri=None):
+        """ Connect to database by default using self.db_uri
+            :param db_uri: over ride db_uri
+        """
         uri = self.db_uri or db_uri
         if uri is None:
             raise ValueError('db_uri not provided')
@@ -15,6 +18,9 @@ class SqlApp():
         Session = sessionmaker(bind=self.engine)
         self.session = Session()
 
+    @property
+    def Base(self):
+        return self.Base
 
     def populate(self, model, rows):
         self.session.add_all([model(**row) for row in rows])
@@ -23,10 +29,6 @@ class SqlApp():
     def create(self, model):
         self.session.add(model)
         self.session.commit()
-
-    @property
-    def base(self):
-        return self.Base
 
     def create_models(self):
         self.Base.metadata.create_all(self.engine)
