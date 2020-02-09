@@ -88,7 +88,7 @@ paste==1.7.5.1
 payplug==1.0.0
 pdfkit==0.5.0
 phonenumbers==7.4.4
-Pillow==4.3.0
+Pillow==6.2.0
 premailer==3.2.0
 psycopg2==2.7.3.2
 pycountry==17.5.14
