@@ -109,7 +109,7 @@ pytz==2017.3
 raven==6.3.0
 redis==3.0.0
 redislite==3.0.271
-requests==2.18.4
+requests==2.20.0
 rq-dashboard==0.5.1
 rq==1.0
 sendgrid==5.6.0
