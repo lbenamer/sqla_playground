@@ -1,6 +1,6 @@
 # SQL Alchemy Postgres Playground
 
-### Requirements  
+### Requirements
 - python 2.7
 - virtualenv
 - Docker
