@@ -23,7 +23,6 @@ $ bash launch.sh
 $ bash uninstall.sh
 ```
 
----
 
 ## SqlApp Module
 ```python
