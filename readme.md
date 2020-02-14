@@ -24,8 +24,8 @@ $ bash uninstall.sh
 ```
 
 ---
-## SqlApp Module
 
+## SqlApp Module
 ```python
 
 from sqlapp import SqlApp
@@ -80,8 +80,6 @@ player = s.session.query(User).filter_by(name='player').first()
 player.city
 ```
 
-
-
 ### Delete a record
 ```python
 player = s.session.query(User).filter_by(name='player').first()
@@ -97,7 +95,7 @@ This inner class contain methods to directly interact with the database
 s.sql.tables
 ```
 
-### Drop Tablea
+### Drop Tables
 ``` python
 # Drop a table
 s.sql.drop_table('user')
