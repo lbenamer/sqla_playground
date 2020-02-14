@@ -64,7 +64,7 @@ class SqlApp():
             raise
 
     def delete(self, model):
-         """ Delete a model in db
+        """ Delete a model in db
             :param model: SQLAlchemy Model
         """
         try:
@@ -98,7 +98,7 @@ class sql:
         return self.list_tables()
 
 
-    def drop_tables(self, show=True):
+    def drop_all_tables(self, show=True):
         """ Drop all tables in db.
             :param show: boolean | Print droped tables | default : True
         """
