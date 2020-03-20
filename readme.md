@@ -13,6 +13,18 @@ $ cd sqlapp
 $ bash install.sh
 ```
 
+### Configure
+You will find a  `.env` file at root level to configure sqlapp project
+```bash
+DB_PORT=5532
+DB_NAME=sqlapp
+PYTHON_BIN=python2.7 # python bin name to create virtual env
+DB_URI=postgresql://postgres@localhost:${DB_PORT}/${DB_NAME} 
+
+WORK_ENV= path/to/project/folder # add path to python path to be able to use project import into sqlapp
+DEPENDENCIES= path/to/requirement.txt # path of python dependencies to add 
+```
+
 ### Launch
 ```bash
 $ bash launch.sh
