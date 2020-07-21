@@ -118,6 +118,7 @@ class sql:
         except Exception as e:
             self.session.rollback()
             spprint('Failed to list tables\n{message}'.format(message=e.message), ['WARNING', 'BOLD'])
+            return
 
         if rows:
             tables = [ r[0] for r in rows ]
